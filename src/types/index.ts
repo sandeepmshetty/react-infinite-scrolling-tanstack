@@ -13,6 +13,7 @@ export interface PostItemProps {
 
 export interface ErrorStateProps {
   message?: string;
+  onRetry?: () => void;
 }
 
 export interface ErrorBoundaryProps {

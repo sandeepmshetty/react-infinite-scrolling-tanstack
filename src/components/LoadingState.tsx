@@ -1,18 +1,23 @@
 import React from 'react';
+import { Loading } from '@/components/ui';
+import { theme } from '@/styles/theme';
+import { VIRTUALIZATION_CONFIG } from '@/config';
 
-const loadingStyles = {
-  initial: {
-    height: '700px', // Match total height
-    display: 'flex' as const,
-    justifyContent: 'center' as const,
-    alignItems: 'center' as const,
-    fontSize: '18px',
-    width: '100%',
-  },
+/**
+ * Loading state component with consistent styling
+ */
+export const LoadingState: React.FC = () => {
+  return (
+    <Loading
+      message="Loading posts..."
+      style={{
+        height: `${VIRTUALIZATION_CONFIG.LIST_HEIGHT}px`,
+        maxWidth: '800px',
+        margin: '0 auto',
+        backgroundColor: theme.colors.background.primary,
+        borderRadius: theme.borderRadius.base,
+        border: `1px solid ${theme.colors.border.light}`,
+      }}
+    />
+  );
 };
-
-export const LoadingState: React.FC = () => (
-  <div style={loadingStyles.initial}>
-    Loading posts...
-  </div>
-);

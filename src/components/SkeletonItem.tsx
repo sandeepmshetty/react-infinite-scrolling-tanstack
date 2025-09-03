@@ -1,12 +1,9 @@
 import React from 'react';
-import { clsOptimizedStyles } from '@/styles/clsOptimized';
+import { PostCard } from './PostCard';
 
-// Skeleton component that matches the exact dimensions of PostItem
+/**
+ * Skeleton component that matches the exact dimensions of PostCard
+ */
 export const SkeletonItem: React.FC = () => (
-  <div style={clsOptimizedStyles.skeletonItem}>
-    <div style={clsOptimizedStyles.skeletonTitle} />
-    <div style={clsOptimizedStyles.skeletonBody} />
-    <div style={clsOptimizedStyles.skeletonBodyShort} />
-    <div style={clsOptimizedStyles.skeletonMeta} />
-  </div>
+  <PostCard isLoading />
 );

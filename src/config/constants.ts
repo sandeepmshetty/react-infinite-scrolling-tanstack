@@ -1,6 +1,6 @@
 // Configuration constants
 export const VIRTUALIZATION_CONFIG = {
-  DEFAULT_ROW_HEIGHT: 120,
+  DEFAULT_ROW_HEIGHT: 160, // Increased from 120 to make cards bigger
   PREFETCH_THRESHOLD: 10,
   LIST_HEIGHT: 600,
 } as const;
