@@ -1,0 +1,19 @@
+/* CSS animations for skeleton loading */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Ensure no layout shifts during loading */
+.cls-optimized-container {
+  contain: layout style paint;
+}
+
+/* Prevent font loading shifts */
+.cls-optimized-text {
+  font-display: swap;
+}
