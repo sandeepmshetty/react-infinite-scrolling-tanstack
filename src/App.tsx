@@ -1,7 +1,7 @@
 import { QueryProvider } from '@/providers';
 import { ErrorBoundary } from '@/components';
-import InfinitePostList from './ReactWindowList';
-import './App.css';
+import { InfinitePostList } from '@/features';
+import '@/styles/app.css';
 
 /**
  * Main application component

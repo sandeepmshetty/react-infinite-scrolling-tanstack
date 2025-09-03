@@ -6,8 +6,8 @@ import { usePosts, useVirtualization } from '@/hooks';
 import type { Post } from '@/types';
 import { theme } from '@/styles/theme';
 import { mergeStyles, containerStyles } from '@/styles/utils';
-import { PostCard } from './components/PostCard';
-import { SkeletonItem, ErrorState, LoadingState } from '@/components';
+import { PostCard } from './PostCard';
+import { SkeletonItem, ErrorState, LoadingState } from '@/components/ui';
 import { VIRTUALIZATION_CONFIG } from '@/config';
 
 const InfinitePostList: React.FC = () => {

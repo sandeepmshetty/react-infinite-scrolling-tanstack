@@ -10,3 +10,4 @@ export { clsOptimizedStyles } from './clsOptimized';
 
 // CSS imports
 import './animations.css';
+import './app.css';

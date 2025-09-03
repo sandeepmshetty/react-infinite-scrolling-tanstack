@@ -1,5 +1,5 @@
 import React from 'react';
-import { PostCard } from './PostCard';
+import { PostCard } from '@/features/posts';
 
 /**
  * Skeleton component that matches the exact dimensions of PostCard

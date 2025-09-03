@@ -1,2 +1,2 @@
-export { usePosts } from './useQueryHook';
+export { usePosts } from './usePosts';
 export { useVirtualization } from './useVirtualization';
